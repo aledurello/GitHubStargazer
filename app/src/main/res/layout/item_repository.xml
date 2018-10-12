@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <com.mariorossi.githubstargazer.features.shared.view.font.TitleTextView
+        android:id="@+id/repo_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.mariorossi.githubstargazer.features.shared.view.font.ContentTextView
+        android:id="@+id/repo_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout style="@style/RepoItemsLayout">
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                style="@style/RepoItemsImage"
+                app:ico_icon="cmd-checkbox-blank-circle" />
+
+            <com.mariorossi.githubstargazer.features.shared.view.font.TitleTextView
+                android:id="@+id/repo_lang"
+                style="@style/RepoItems" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/RepoItemsLayout">
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                style="@style/RepoItemsImage"
+                app:ico_icon="gmd-star" />
+
+            <com.mariorossi.githubstargazer.features.shared.view.font.TitleTextView
+                android:id="@+id/repo_favorites"
+                style="@style/RepoItems" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/RepoItemsLayout">
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                style="@style/RepoItemsImage"
+                app:ico_icon="cmd-source-fork" />
+
+            <com.mariorossi.githubstargazer.features.shared.view.font.TitleTextView
+                android:id="@+id/repo_fork"
+                style="@style/RepoItems" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

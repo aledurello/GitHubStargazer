@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GitHubStargazer</string>
+    <string name="no_data">Nessun dato disponibile</string>
+    <string name="search">Cerca</string>
+</resources>
